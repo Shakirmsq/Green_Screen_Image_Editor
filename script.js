@@ -53,3 +53,22 @@ function clearCanvas() {
     bgCanvas.getContext("2d").clearRect(0, 0, bgCanvas.width, bgCanvas.height);
 
 }
+
+// Download Composite Image
+function downloadComposite() {
+    // Check if the composite image has been created
+    if (fgCanvas.getContext("2d").getImageData(0, 0, fgCanvas.width, fgCanvas.height).data.length === 0) {
+        alert("No composite image to download");
+        return;
+    }
+
+    // Get the data URL of the composite image
+    var dataURL = fgCanvas.toDataURL();
+
+    // Create a link element and simulate a click event to trigger the download
+    var link = document.createElement("a");
+    link.download = "composite.png";
+    link.href = dataURL;
+    link.click();
+    alert('Download Completed !')
+}
