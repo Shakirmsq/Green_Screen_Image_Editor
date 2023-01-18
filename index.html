@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Green Screen Web Page</title>
+</head>
+
+<body>
+    <h1>Green Screen Image Editor</h1>
+
+
+
+
+    <canvas id="fgCanvas"></canvas>
+    <canvas id="bgCanvas"></canvas>
+
+    <br>
+    <p>
+        Foreground :
+        <input type="file" multiple="false" accept="image/*" id="fgInput" onchange="loadForegroundImage()"> Background :
+        <input type="file" multiple="false" accept="image/*" id="bgInput" onchange="loadBackgroundImage()">
+
+    </p>
+
+    <br><br>
+    <!-- <button onclick="doGreenScreen()">Create Composite</button> -->
+    <input type="button" value="Create Composite" id="composite" onclick="doGreenScreen()">
+
+    <!-- <button onclick="clearCanvas()">Clear Canvases</button> -->
+    <input type="button" value="Clear Canvases" id="clear" onclick="clearCanvas()">
+
+
+
+
+    <script src="script.js"></script>
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script type="text/javascript" src="../common/js/cs101/SimpleImage.js"></script>
+</body>
+
+</html>

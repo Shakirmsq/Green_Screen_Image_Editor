@@ -1,0 +1,55 @@
+body {
+    font-family: 'Times New Roman';
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'system-ui';
+    color: blue;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+canvas {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin: 0 50px;
+    border: 1px solid black;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        width: 90%;
+    }
+}
