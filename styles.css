@@ -3,6 +3,7 @@ body {
     color: black;
     margin: 20px;
     text-align: center;
+    background-image: linear-gradient(to right, red, pink);
 }
 
 h1 {
