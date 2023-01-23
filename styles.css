@@ -22,6 +22,7 @@ canvas {
     height: auto;
     margin: 0 50px;
     border: 1px solid black;
+    background-image: linear-gradient(to left, yellow, lime);
 }
 
 input[type="file"] {
